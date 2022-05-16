@@ -4,74 +4,64 @@ import "./Inquiry.css";
 const Inquiry = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [myself, setMyself] = useState("");
+  const [someone, setSomeOne] = useState("")
 
   function handleSubmit() {
-    console.log("name, email", name, email);
+    console.log("name, email myself, someone", name, email, myself, someone);
   }
   return (
     <div className="row mt-5 ms-auto">
       <div className="col-md-11">
-        {/* 
-        <table className="table  mb-4">
-                <tr>
-                    <td className="fw-bold medical"> (Only for Medical treatment) </td>
-                    <td className="fw-bold ">Name</td>
-                    <td className="fw-bold">Phone or Email</td>
-                </tr>
-                <tr>
-                    <td  className="fw-bold medical"> Treatment Inquiry for 
-                        <input type="radio" name="inquiry" id="" className="ms-2 "/> <label htmlFor=""> Myself</label>
-                        <input type="radio" name="inquiry" id="" className="m-1 "/> <label htmlFor=""> Someone</label>
-                    </td>
-                    <td><input type="text" name="name" value={name} onChange={(e)=> setName(e.target.value)} placeholder="Patient Name" className="fw-bold boder"/></td>
-                    <td><input type="text" name="email" value={email} onChange={(e)=> setEmail(e.target.value)} placeholder="Enter Email or PHone" className="fw-bold m-2"/></td>
-                    <td> <button onClick={()=> handleSubmit()} className="button">Submit</button> </td>
-                </tr>
-        </table> */}
         <div className="row">
           <div className="col-xl-5">
-            <p className="fw-bold medical"> (Only for Medical treatment)</p>{" "}
+            <p className="fw-bold medical "> (Only for Medical treatment)</p>{" "}
             <br />
-            <div className="d-flex">
-              <p className="fw-bold medical"> Treatment Inquiry for </p>
-              <p className="fw-bold medical">
-                <div>
-                  <input type="radio" name="inquiry" id="" className="ms-2 " />
+            <div className="d-flex ">
+              <p className="fw-bold medical "> Treatment Inquiry for </p>
+              <p className="fw-bold medical  medicaloption medmain">
+                <div className="d-flex">
+                  <input type="radio" name="inquiry" value={myself} onChange={(e)=> setMyself(e.target.checked)} id="" className="m-2 " />
                   <label htmlFor=""> Myself</label>
                 </div>
-                <div>
-                  <input type="radio" name="inquiry" id="" className="m-1 " />{" "}
+                <div className="d-flex">
+                  <input type="radio" name="inquiry" value={someone} onChange={(e)=> setMyself(e.target.checked)} id="" className="m-2 " />{" "}
                   <label htmlFor=""> Someone</label>
                 </div>
               </p>
             </div>
           </div>
           <div className=" col-xl-7">
-            <div className="d-flex">
+
+           <div className="row  inq">
+              <div className="col-md-4">
               <p className="fw-bold">Name</p>
-              <p className="fw-bold">Phone or Email</p>
-            </div>
-            <div>
               <input
                 type="text"
                 name="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Patient Name"
-                className="fw-bold boder"
+                className="fw-bold border"
               />
+              </div>
+              <div className="col-md-4 ">
+              <p className="fw-bold">Email or Number</p>
               <input
                 type="text"
                 name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter Email or PHone"
-                className="fw-bold m-1"
-              />
+                placeholder="Email or Number"
+                className="fw-bold boder"/>
+              </div>
+              <div className="col-md-3 subbutton">
               <button onClick={() => handleSubmit()} className="button">
                 Submit
               </button>
+              </div>
             </div>
+
           </div>
         </div>
       </div>

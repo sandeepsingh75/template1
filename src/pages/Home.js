@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Form from "../components/Form/Form";
 import Inquiry from "../components/inquiry/Inquiry";
 import Navbar from "../components/Navbar/Navbar";
@@ -9,6 +9,14 @@ import { details } from "../components/details/PeopleDetails";
 
 const Home = () => {
   // console.log(" homedetais", details);
+  const [checkbox, setCheckBox] = useState({
+    emergency:'',
+    addiction:'',
+    aerospace:'',
+    allergy:'',
+    allergyAndEmmunology:'',
+    anaesthiology:''
+  })
   return (
     <div className="main">
       <Navbar />
@@ -32,7 +40,7 @@ const Home = () => {
                 <div className="col-xl-4 col-lg-6  col-md-6 col-sm-6 border border-secondary single">
                 <div className="img">
                   {/* <div className="circle"></div> */}
-                  <img src={detail.image} alt="" className="image border border-primary p-1" />
+                  <img src={detail.image} alt="" className="image border  border-primary p-1" />
                 </div>
                 <h3 className="text-center"> {detail.name} </h3>
                 <p className="text-center mb-5 fw-bold detail"> {detail.about} </p>

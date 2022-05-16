@@ -3,7 +3,10 @@
     /* border: 1px solid black; */
     height: 11rem;
     overflow-y: scroll;
+    scrollbar-width: normal;
     overflow-x: hidden;
+    scrollbar-color: black white;
+    /* display: flex; */
 }
 
 .search{
@@ -14,6 +17,8 @@
     font-size: 11px;
     font-weight: 700;
     color: #a3b5b5;
+    margin-top: 0;
+    margin-left: 0;
 }
 
 .form{
@@ -32,10 +37,11 @@
 .spsearch{
     width: 11.5rem;
 }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 576px) {
 
 }
 
@@ -44,8 +50,8 @@
     .spsearch{
         width: 21rem;
     }
-    .speciality{
-        
+    .srch{
+        width: 11.666667%;
     }
 }
 
@@ -61,5 +67,8 @@
 @media only screen and (min-width: 1200px) {
     .spsearch{
         width: 12.5rem;
+    }
+    .title{
+        margin-top: 0;
     }
 }

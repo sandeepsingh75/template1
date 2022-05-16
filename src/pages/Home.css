@@ -3,7 +3,8 @@
 }
 
 .image{
-    margin: 30px 37px;
+    margin: 40px 39px;
+    
 }
 
 
@@ -43,10 +44,17 @@ font-family: 'Rubik', sans-serif;
 color: rgb(175, 175, 175);
 }
 
+/* @media only screen and (min-width:480px){
+    
+} */
+
 @media only screen and (min-width:480px)
 {
     .image{
-        margin: 15px 16px;
+        margin: 29px 79px;
+    }
+    .main{
+        padding: 1rem 3rem;
     }
 }
 
@@ -56,14 +64,17 @@ color: rgb(175, 175, 175);
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 576px) {
 .image{
-    margin: 36px -6px;
+    margin: 36px 20px;
+}
+.main{
+    padding: 1rem 4rem
 }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 .image{
-    margin: 35px 43px;
+    margin: 35px 63px;
 }
 }
 
@@ -73,11 +84,13 @@ color: rgb(175, 175, 175);
         /* width: 15rem; */
     }
     .image{
-        margin: 33px 12px
+        margin: 33px 21px;
     }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-
+    .image{
+        margin: 42px 47px
+    }
 }

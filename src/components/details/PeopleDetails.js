@@ -49,37 +49,31 @@ export const details = [
 export const speciality = [
     {
         id:1,
-        // name:"Accident and emergency medicine",
         title:"Accident and emergency medicine"
 
     },
     {
         id:2,
-        // name:"Addiction Medicine",
         title:"Addiction Medicine"
 
     },
     {
         id:3,
-        // name:"aerospace",
         title:"Aerospace Medicine"
 
     },
     {
         id:4,
-        // name:"allergy",
         title:"Allergy Medicine"
 
     },
     {
         id:5,
-        // name:"immunology",
         title:"Allergy and immunology"
 
     },
     {
         id:6,
-        // name:"anaesthesiology",
         title:"Anaesthesiology"
 
     }

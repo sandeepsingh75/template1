@@ -5,25 +5,43 @@
 
 
 .treat{
-    font-size: 10px;
+    /* font-size: 10px; */
+    color: #8b8d8e;
 }
 
 .medical{
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
-    color: rgb(175, 175, 175);
+    /* color: rgb(175, 175, 175); */
+    color: #8b8d8e;
+}
+.phone{
+    margin-left: 11rem;
+}
+
+.inq input{
+    width: 10rem;
+}
+
+.inq button{
+    margin: 38px 1px;
 }
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
+@media only screen and (min-width: 480px) {
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-
+    .medicaloption{
+        display: flex;
+    }
+    .inq button {
+        margin: 40px 1px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -33,10 +51,15 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .inq input{
+        width: 190px;
+    }
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    
+    .inq input{
+        width: 145px;
+    }
 }
