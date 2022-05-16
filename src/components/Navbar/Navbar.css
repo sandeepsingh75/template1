@@ -1,0 +1,47 @@
+.contact{
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+
+.icon{
+    position: absolute;
+    left: -16px;
+    top: 9px;
+    width: 34px;
+    height: 34px;
+}
+
+.header{
+    font-family: 'Noto Sans', sans-serif;   
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .title{
+        margin-right: auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .title{
+        margin-right: auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.title{
+    margin-right: auto;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
